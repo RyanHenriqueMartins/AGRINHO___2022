@@ -9,6 +9,7 @@
     <script src='main.js'></script>
 </head>
 <body>
+    
     <header>
 			
         <div class="caixa">
@@ -21,7 +22,14 @@
                 </ul>
             </nav>
         </div>
+        
         </header>
+        <script type="module">
+            import { Toast } from 'bootstrap.esm.min.js'
+          
+            Array.from(document.querySelectorAll('.toast'))
+              .forEach(toastNode => new Toast(toastNode))
+          </script>
        
 <a href="combat atarii.html"><img src="imagens/Atari.png" alt=" Imagen do jogo atari, imagen com superlink"></a>
 
